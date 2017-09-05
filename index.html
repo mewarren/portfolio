@@ -19,28 +19,49 @@
     
     <body>
         <div id = "wrapper" >
-            <header></header>
-            <div class = "headline" >
-                <h2>The Personal Portfolio of</br>
-                    <span id = "display-name" >Michael Warren</span>
-                </h2>
-                <h4><a href="https://github.com/mewarren">Let's connect</a></h4>
-            </div>
-            
-            <div class = "main" id = "project-1" >
-                <p>Project   
-                </p>
-            </div>
-            <div class = "main" id = "project-1" >
-                <p>Project   
-                </p>  
-            </div>
-            <div class = "main" id = "project-1" >
-                <p>Project   
-                </p>  
-            </div>
+            <h2>The Personal Portfolio of</br>
+                <span id = "display-name" >Michael Warren</span>
+            </h2>
+                <nav class="main-nav">
+                    <ul>
+                        <li class="tab" data-content="main"><a href="#">Projects</a></li>
+                        <li class="tab" data-content="about"><a href="#">About</a></li>
+                    </ul>
+                </nav>
+            <section id="main" class="tab-content">
+                
+                <div class = "portfolio" id = "project-1" >
+                    <p>Project   
+                    </p>
+                </div>
+                <div class = "portfolio" id = "project-1" >
+                    <p>Project   
+                    </p>  
+                </div>
+                <div class = "portfolio" id = "project-1" >
+                    <p>Project   
+                    </p>  
+                </div>
+            </section>
+
+            <section id="about" class="tab-content">
+                <div class="body">
+                    <p>
+                        <h2>Michael Warren </h2>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                    </p>
+                    <h4>
+                        <a href="https://github.com/mewarren">Let's connect</a>
+                    </h4>
+                </div>
+            </section>
+                
         </div>
     </body>
-    <script src = "scripts/app.js" type = "text/javascript" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+    <script src = "scripts/projectData.js" type = "text/javascript" ></script>
+    <script src = "scripts/project.js" type = "text/javascript" ></script>
+    <script src = "scripts/projectView.js" type = "text/javascript" ></script>
+    
 </html>
