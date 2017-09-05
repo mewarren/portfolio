@@ -2,11 +2,12 @@
 
 function Project (projects) {
 
-    this.projectName = projects.projectMame;
-    this.pubDate = projects.pubDate;
-    this.description = projects.description;
-    this.image = projects.image;
-    // this.url = projects.url;
-       
+  this.projectName = projects.projectName;
+  this.pubDate = projects.pubDate;
+  this.image = projects.image;
+  this.description = projects.description;
+  // this.url = projects.url;       
 }
+
+
 
