@@ -1,13 +1,22 @@
 'use strict'
 
-function Project (projects) {
+function Project (allProjects) {
 
-  this.projectName = projects.projectName;
-  this.pubDate = projects.pubDate;
-  this.image = projects.image;
-  this.description = projects.description;
-  // this.url = projects.url;       
+  this.projectName = allProjects.projectName;
+  this.pubDate = allProjects.pubDate;
+  this.image = allProjects.image;
+  this.description = allProjects.description;
+  // this.url = allProjects.url;       
 }
+
+Project.prototype.toHtml = function(){
+  var template = $('#newProject-template').html();
+  var templateFiller = Handlebars.compile(template);
+  var filledTemplate = templateFiller(this);
+  return filledTemplate;
+};
+
+
 
 
 
