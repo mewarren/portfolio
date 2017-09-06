@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Michael Warren's portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mewarren/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Michael Warren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mewarren/portfolio/issues"
+  },
+  "homepage": "https://github.com/mewarren/portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4"
+  }
+}
